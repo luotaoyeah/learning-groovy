@@ -7,6 +7,10 @@ package _02_04
 def list01 = ["A", "B", "C"]
 assert list01.size() == 3
 assert list01 instanceof ArrayList
+
+// 支持运算符重载,
+list01 += 'D'
+assert list01.size() == 4
 //----------------------------------------------------------------------------------------------------
 //endregion
 
@@ -15,8 +19,13 @@ assert list01 instanceof ArrayList
 def map01 = [x: 1, y: 2]
 assert map01 instanceof LinkedHashMap
 
-// 直接通过 obj.key 访问某个 value,
+// 直接通过 obj.key 获取某个 value,
 assert map01.x == 1
+
+// 直接通过 obj.key 赋值某个 value,
+map01.x = 2
+
+assert map01.x == 2
 
 assert map01.x instanceof Integer
 //----------------------------------------------------------------------------------------------------
