@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="syntax._01_03._00" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+  <configuration default="false" name="_01_01_01_03._00" type="GroovyScriptRunConfiguration" factoryName="Groovy">
     <module name="learning-groovy.doc" />
-    <setting name="path" value="file://$PROJECT_DIR$/src/syntax/_01_03/_00.groovy" />
+    <setting name="path" value="file://$PROJECT_DIR$/src/_01_01_01_03/_00.groovy" />
     <setting name="vmparams" value="-Dgroovy.attach.runtime.groovydoc=true" />
     <setting name="params" value="" />
-    <setting name="workDir" value="file://$PROJECT_DIR$/src/syntax/_01_03" />
+    <setting name="workDir" value="file://$PROJECT_DIR$/src/_01_01_01_03" />
     <setting name="debug" value="false" />
     <method v="2">
       <option name="Make" enabled="true" />
