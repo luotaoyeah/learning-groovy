@@ -26,4 +26,29 @@ def fn01(Map param) {
     assert result01 == '1, 2'
     assert result02 == '1, 2'
     assert result03 == '1, 2'
+
+    println '\n--------------------------------------------------\n'
+}
+
+
+// 如果方法的最后一个参数是一个闭包, 则调用该方法时, 闭包可以放在圆括号的外面,
+
+def fn02(Integer x, Closure c) {
+    "${x}, ${c()}"
+}
+
+{
+    // 正常调用,
+    def result01 = fn02(1, { 2 })
+    assert result01 == '1, 2'
+
+    // 闭包放在圆括号的外面,
+    def result02 = fn02(1) { 2 }
+    assert result02 == '1, 2'
+
+    // 闭包放在圆括号的外面, 并且省略方法的圆括号,
+    def result03 = fn02 1, { 2 }
+    assert result03 == '1, 2'
+
+    println '\n--------------------------------------------------\n'
 }
